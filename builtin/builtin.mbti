@@ -165,6 +165,8 @@ impl BigInt {
 type Buffer
 impl Buffer {
   expect(Self, ~content : String = .., ~loc : SourceLoc = _, ~args_loc : ArgsLoc = _) -> Unit!InspectError
+  is_empty(Self) -> Bool
+  length(Self) -> Int
   new(~size_hint : Int = ..) -> Self
   reset(Self) -> Unit
   to_bytes(Self) -> Bytes
